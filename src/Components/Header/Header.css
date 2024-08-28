@@ -1,0 +1,521 @@
+.headerContainer {
+  width: 100%;
+}
+
+.headerNav {
+  padding: 0px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+nav {
+  flex-basis: 74.7%;
+}
+
+nav a {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  text-align: left;
+  
+}
+
+nav ul li:first-child {
+  flex-basis: 26%;
+  /* border-bottom: 1px solid #fff; */
+}
+
+nav ul li:nth-child(2) {
+  flex-basis: 26%;
+}
+
+nav ul li:nth-child(3) {
+  flex-basis: 25%;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* .logo { padding-left: 2%;} */
+.logo img {
+  width: 120px;
+  /* height: 75px; */
+  aspect-ratio: 3/1.5;
+  padding: 20px;
+}
+
+.logo span {
+  display: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+}
+
+.talk_to_us_only_mob {
+  display: none;
+}
+
+.nav-links ul li.active {
+  color: #00b3cc;
+}
+.wannatalk {
+  width: 240px;
+  height: 60px;
+  position: relative;
+}
+.wannatalk figure {
+  width: 30px;
+  padding-right: 10px;
+}
+.test {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 35px;
+  animation: rotation 1.5s linear 0s infinite;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  font-size: 0;
+}
+
+
+.wannatalk a {
+  width: 93%;
+  height: 84%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #06a9ca;
+  border-radius: 52px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: normal;
+  position: relative;
+  z-index: 99;
+  top: 5px;
+  left: 1px;
+}
+
+/* Hover styles for desktop only */
+@media screen and (min-width: 580px) {
+  .wannatalk a:hover + .test {
+    background: rgb(54, 183, 255);
+    background: linear-gradient(
+      var(--gradient-angle),
+      #36b7ff,
+      #9edcff,
+      #4ba9ff,
+      #164661
+    );
+    transition: 0.3s;
+   opacity: 1;
+   filter: blur(5px);
+
+  }
+
+  .wannatalk a:active {
+    background-color: #0094b1;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 2px 16px 0px;
+  }
+
+  .wannatalk a:active + .test {
+    border-radius: 100px;
+    background: rgba(6, 169, 202, 0.5);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 2px 16px 0px;
+  }
+}
+
+nav a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  padding: 1%;
+  
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #080d27; 
+  border-radius: 3px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #267b9f;
+  margin: 4px 0;
+  transition: 0.4s;
+
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+/* Hover styles for desktop only */
+
+@media screen and (max-width: 2000px) {
+  nav a {
+    font-size: 21px;
+  }
+  /* .logo img {
+    width: 120px;
+    height: 60px;
+  } */
+}
+
+/* @media screen and (max-width: 1400px) {
+  .logo img {
+    width: 120px;
+    height: 60px;
+  }
+} */
+
+/* Responsive styles */
+
+@media screen and (max-width: 1440px) {
+  nav a {
+    font-size: 19px;
+  }
+  .wannatalk {
+    width: 200px;
+    height: 60px;
+  }
+  .wannatalk a {
+    font-size: 16px;
+  }
+  .wannatalk figure {
+    padding: 0;
+  }
+  .wannatalk img {
+    width: 71%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    flex-basis: 63.7%;
+  }
+  nav ul li:first-child {
+    flex-basis: 22%;
+  }
+
+  nav ul li:nth-child(2) {
+    flex-basis: 22%;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  .wannatalk {
+    width: 140px;
+    height: 40px;
+  }
+  .wannatalk a {
+    font-size: 12px;
+  }
+  .wannatalk figure {
+    padding: 0;
+  }
+  .wannatalk img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .logo span {
+    font-size: 8px;
+  }
+  .logo img {
+    /* height: 60px; */
+    width: 90px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  nav {
+    flex-basis: 68.7%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo img {
+    /* height: 60px; */
+    width: 90px;
+  }
+  .logo span {
+    font-size: 6px;
+  }
+  nav {
+    flex-basis: 70.7%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav a {
+    font-size: 13px;
+  }
+  .wannatalk a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 11px;
+  }
+  .wannatalk a {
+    font-size: 8px;
+  }
+  .wannatalk figure {
+    width: 19px;
+    padding-right: 5px;
+  }
+  .wannatalk {
+    width: 110px;
+    height: 25px;
+  }
+  
+}
+@media screen and (max-width: 660px) {
+  .logo span {
+    font-size: 4px;
+  }
+  nav a {
+    font-size: 9px;
+  }
+  .wannatalk a {
+    font-size: 6px;
+  }
+}
+@media only screen and (min-width: 580px) {
+  .talk-to-us {
+      display: none; /* Hide the logo on desktop */
+  }
+}
+@media screen and (max-width: 580px) {
+  .talk_to_us_only_mob {
+    display: block;
+  }
+
+  .headerContainer .wannatalk {
+    display: none;
+  }
+
+  .logo img {
+    /* height: 55px; */
+    width: 85px;
+    padding: 8px;
+}
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    background-color: #080d27; 
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    transition: transform 0.4s, opacity 0.4s; /* Add opacity transition */
+  }
+
+  .bar1.open {
+    transform: rotate(326deg) translate(-4px, 7px);
+  }
+
+  .bar2.open {
+    opacity: 0;
+    transform: translateX(-60px); /* Move bar2 to the left */
+  }
+
+  .bar3.open {
+    transform: rotate(32deg) translate(-6px, -10px);
+  }
+
+  .nav-links.open .bar1,
+  .nav-links.open .bar2,
+  .nav-links.open .bar3 {
+    background-color: #333; /* Change to desired color */
+  }
+
+  .nav-links.open .bar1.open,
+  .nav-links.open .bar2.open,
+  .nav-links.open .bar3.open {
+    background-color: transparent; /* Change to desired color */
+  }
+
+  .nav-links {
+    padding-top: 58px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-image: linear-gradient(to right, #080f31 , #081b5a);
+    z-index: -1;
+    transform: translateY(-256%);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+  }
+
+  .nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .nav-links a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+ 
+  
+  nav ul li {
+    width: 100%;
+    text-align: center;
+     
+  }
+  
+  nav ul li a {
+    padding: 5% 0;
+  }
+
+  nav ul li:nth-child(1),  nav ul li:nth-child(2)  {
+    height: 1px;
+    /* margin: 50px 0; */
+    /* background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0; */
+  }
+  nav ul li:nth-child(1)::after,  nav ul li:nth-child(2)::after, nav ul li:nth-child(3)::after  {
+    display: block;
+    content: '';
+    height: 1px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+  /* .nav-links a:hover {
+      color: #00B3CC;
+  } */
+
+  body.nav-open {
+    overflow: hidden; /* Hide scroll when the menu is open */
+    
+  }
+  .nav-open {
+    overflow: hidden;
+  }
+  
+  .wannatalk a {
+    font-size: 15px;
+    padding: 7px 22px;
+  }
+  .wannatalk figure {
+    width: 19px;
+    padding-right: 5px;
+  }
+  .wannatalk {
+    width: 200px;
+    height: 60px;
+  }
+
+  .wannatalk img {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+}
+
+@media screen and (max-width: 320px) {
+  .hero h2 {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}

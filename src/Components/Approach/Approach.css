@@ -1,0 +1,110 @@
+.approach {
+    padding: 30px 0;
+    background-color: #00B3CC;
+    
+}
+
+
+.approach>.wrapper> h3 {
+    font-size: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BuildTitling-Regular';
+    color: #fff;
+}
+
+.approach>.wrapper> p {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: #fff;
+}
+.approach>.wrapper> ul {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.approach>.wrapper> ul li {
+    position: relative;
+    flex-basis: 22%;
+    color: #fff;
+}
+.approach>.wrapper> ul li:not(:last-child):before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: 15%;
+    right: -17%;
+    background-color: #80D9E5;
+}
+
+
+.approach>.wrapper> ul li:not(:last-child) {
+    margin-right: 4%;
+}
+.approach>.wrapper> ul li figure {
+    width: 80px;
+    height: 80px;
+    padding-bottom: 15px;
+}
+.approach>.wrapper> ul li>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.approach>.wrapper> ul li figure>img {
+    margin-top: -14px;
+}
+.approach>.wrapper> ul li p {
+    width: 200px;
+    line-height: 32px;
+    font-weight: 400; 
+    font-size: 18px;
+    text-align: center;
+    
+}
+.approach>.wrapper> ul li h4 {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.approach > .wrapper > ul li:last-child p {
+    width: 220px;
+}
+
+@media screen and (max-width: 900px) {
+    .approach > .wrapper > ul {
+        flex-direction: column; /* Display items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .approach > .wrapper > ul li {
+        flex-basis: 100%; /* Full width for each item on smaller screens */
+    }
+
+    .approach > .wrapper > ul li:not(:last-child):before {
+        width: 3px; /* Adjust the width for vertical lines */
+        height: 30%; /* Full height for the line */
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #80D9E5;
+        content: '';
+       
+    }
+    .ideate-content,.design-content,.develop-content{
+        padding-bottom:100px ;
+    }
+    .deploy-content{
+        margin-right: 20px;
+    }
+}
+

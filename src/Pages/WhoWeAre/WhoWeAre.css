@@ -1,0 +1,15 @@
+
+@media only screen and (max-width:580px){
+
+.whoWeAre {
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+.whoWeAre::-webkit-scrollbar { 
+    display: none;
+}
+
+}

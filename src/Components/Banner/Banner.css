@@ -1,0 +1,208 @@
+.banner {
+  background: url('../../Assets/images/HomeBanner.jpg') no-repeat center center/100% 100%;
+}
+
+
+.hero a {
+  margin-top: 25px;
+  display: block;
+}
+
+.hero {
+  padding: 15% 4% 15%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero a img {
+  width: 60px;
+ }
+
+.hero h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 1.185px;
+  font-size: 68px;
+}
+
+.hero h2 p {
+  font-family: "Poppins", sans-serif;
+}
+
+.heromobile {
+  display: none;
+}
+
+@media only screen and (max-width : 3500px) {
+  .hero h2 {
+    font-size: 58px;
+  }
+  .hero{
+    padding: 25% 4% 25%;
+  }
+}
+@media only screen and (max-width : 2600px) {
+  .hero{
+    padding: 20% 4% 20%;
+  }
+}
+@media only screen and (max-width : 2400px) {
+  .hero{
+    padding: 17% 4% 14%;
+  }
+}
+@media only screen and (max-width : 2000px) {
+  .hero{
+    padding: 15% 4% 15%;
+  }
+}
+@media only screen and (max-width : 1800px) {
+  .hero h2 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width : 1500px) {
+  .hero h2 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .hero{
+    padding: 15% 4% 15%;
+  }
+}
+@media only screen and (max-width : 1024px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+  .hero a img {
+    width: 30px;
+    border-radius : 10px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .hero h2 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width : 668px) {
+  .hero h2 {
+    font-size: 22px;
+  }
+  .hero a  {
+    margin-top: 15px;
+  }
+  .hero a img {
+    width: 25px;
+    border-radius : 8px;
+  }
+}
+@media only screen and (max-width : 540px) {
+  .banner { 
+    width: 100%; 
+    max-width: 1000px;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../Assets/images/Bannermob.jpg");
+    aspect-ratio: 1/1;
+}
+
+.banner::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+}
+
+
+  .hero { display: none;}
+  .heromobile{
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    background-color: #080d27;
+
+  }
+  .heromobile h2 {
+    padding: 2% 0;
+    padding: 2% 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.185px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  #textContainer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+  
+  }
+
+  #textContainer p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 1.185px;
+  font-size: 21px;
+  width: 70%;
+  }
+  
+  .wannatalk{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .heromobileimg {
+    display: none;
+  }
+
+
+  .heromobile .heromobileimg {
+    width: 31px;
+    padding: 1% .5%;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    margin: 78% 0;
+  }
+
+  .heromobile .wannatalk, .heromobile .wannatalk a {
+    position: static;
+  }
+  .heromobile .wannatalk a {
+    padding: 0;
+    color:#fff ;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .heromobile .wannatalk figure {
+    width: 23px;
+    padding-right: 10px;
+}
+}
+@media only screen and (max-width : 480px) {
+  .hero h2 {
+    font-size: 17px;
+  }
+  .hero a img {
+    width: 18px;
+    border-radius: 6px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .hero h2 {
+    font-size: 14px;
+  }
+}

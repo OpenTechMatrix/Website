@@ -1,0 +1,380 @@
+.approach {
+  padding: 30px 0;
+  background-color: #0C1838;
+  background: linear-gradient(180deg, #090e28 50%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(0deg, #151e47, #2a3b64);
+  margin: auto;
+  width: 100%;
+  border-radius: 40px 40px 40px 40px;
+  border-bottom: 2px solid #334679;
+  position: relative;
+  z-index: 2;
+}
+.digit-one{
+  display: none;
+}
+.approach .wrapper {
+  max-width: 1920px;
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+.approach > .wrapper > h3 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  color: #06a9ca;
+  padding: 50px 0 0;
+  
+}
+
+.approach > .wrapper > p {
+  padding: 30px 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: #C4CBF5;
+}
+.approach > .wrapper > ul {
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+
+.approach > .wrapper > ul li {
+  position: relative;
+  flex-basis: 22%;
+  color: #fff;
+  padding-top: 15px;
+}
+.approach > .wrapper > ul li figure {
+  width: 108px;
+  height: 108px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.approach > .wrapper > ul li > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.approach > .wrapper > ul li figure > img {
+  margin-top: -14px;
+  transition: 0.3s;
+}
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.ourApproachArrow img {
+  height: 90px;
+  width: 90px;
+  padding-top: 20px;
+}
+.approach > .wrapper > ul li p {
+  width: 200px;
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: #C4CBF5;
+}
+.approach > .wrapper > ul li h4 {
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #F2F5F7;
+}
+.approach > .wrapper > ul li:last-child p {
+  width: 220px;
+}
+.approach > .ourApproachCircle {
+  position: relative;
+}
+.approach > .ideateImg,
+.developImg {
+  position: absolute;
+  height: 40px;
+  width: 28px;
+}
+.approach > figure > .ideateImg,
+.deployImg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+}
+.approach > figure > .ideateImg,
+.designImg {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+}
+.approach > figure > .deployImg,
+.ideateImg {
+  position: absolute;
+  height: 40px;
+  width: 24px;
+}
+
+  
+/* Responsive Section */
+
+@media screen and (max-width: 1450px) {
+  .approach > .wrapper > h3 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .approach > .wrapper > p {
+    padding: 30px 0;
+    font-size: 23px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .approach > .wrapper > ul li figure {
+    width: 100px;
+    height: 100px;
+  }
+  .approach > .wrapper > ul li p {
+    width: 150px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .approach > .wrapper > ul li:last-child p {
+    width: 160px;
+  }
+  .approach > .wrapper > ul li h4 {
+    padding-bottom: 10px;
+    font-weight: 550;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .approach > .wrapper > ul li:not(:last-child) {
+    margin-right: 0%;
+  }
+  .ourApproachArrow img {
+    height: 50px;
+    width: 50px;
+    padding-top: 30px;
+  }
+  .ourApproachArrow img {
+    padding-top: 30px;
+    height: 60px;
+    width: 60px;
+  }
+  .ideate-content,
+  .design-content,
+  .develop-content {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .approach > .wrapper > ul {
+    flex-wrap: wrap;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+  }
+
+  .approach > .wrapper > ul li {
+    flex-basis: 100%; /* Full width for each item on smaller screens */
+  }
+
+  .ourApproachArrow {
+    transform: rotate(90deg);
+    margin-left: 3%;
+  }
+  .ourApproachArrow img {
+    margin-right: 100px;
+    height: 60px;
+    width: 60px;
+    padding-top: 20px;
+  }
+  .ideate-content,
+  .design-content,
+  .develop-content {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .approach > .wrapper > ul li {
+    flex-basis: 32%; /* Full width for each item on smaller screens */
+  }
+
+  .approach {
+    padding: 14% 0;
+    border: none;
+    border-radius: 0;
+    animation: Ourapprach 8s infinite forwards;
+
+  }
+  .approach .wrapper{
+    width: 87%;
+    margin: auto;
+    padding: 3% 0;
+    background: linear-gradient(180deg, #0e1434 4.79%, #1b275a 100%),
+      linear-gradient(0deg, #334679, #334679);
+    border-radius: 20px;
+    border: 2px solid #334679;
+    border-bottom: 2px solid #334679;
+    position: relative;
+    box-shadow: 0px 4px 40px 0px #000000bf;
+    z-index: 2;
+  }
+
+  .one{
+    left: 20px !important;
+  }
+  .digit-one{
+    display: block;
+    position: absolute;
+    font-family: Poppins;
+    font-size: 129px;
+    font-weight: 600;
+    line-height: 203px;
+    opacity: 0.1;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    top: -41px;
+    left: 0px;
+    z-index: -1;
+  }
+  .approach > .wrapper > h3 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 51px;
+    padding:  0;
+  }
+  .approach > .wrapper > p {
+    padding: 10px 0;
+    font-family: Poppins;
+    color: #c4cbf5;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-size: 23px;
+    /* width: 305px; */
+    height: 117px;
+    font-weight: 500;
+  }
+  .approach > .wrapper > ul li figure {
+    width: 62px;
+    height: 100px;
+    padding-bottom: 0px;
+  }
+  .approach > .wrapper > ul li p {
+    width: 150px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .approach > .wrapper > ul li h4 {
+    padding-bottom: 0px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.41999998688697815px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .approach > .wrapper > ul li:not(:last-child) {
+    margin-right: 11px;
+  }
+  .approach > .wrapper > ul {
+  
+    padding: 3px 0 0;
+  }
+  .approach > .wrapper > ul li figure > img {
+    /* margin-top: -14px; */
+    transition: 0.3s;
+  }
+
+
+  .ourApproachArrow {
+    /* transform: rotate(90deg);
+    margin-left: 3%; */
+    display: none;
+  }
+  .ourApproachArrow img {
+    margin-right: 100px;
+    height: 60px;
+    width: 60px;
+    padding-top: 20px;
+  }
+  .ideate-content,
+  .design-content,
+  .develop-content {
+    padding-bottom: 100px;
+  }
+  .approach > figure > .deployImg,
+  .ideateImg {
+    position: absolute;
+    width: 8%;
+    height: 8%;
+  }
+  .approach > figure > .deployImg,
+  .designImg {
+    position: absolute;
+    width: 14%;
+    height: 8%;
+  }
+  .approach > figure > .deployImg,
+  .developImg {
+    position: absolute;
+    width: 10%;
+    height: 8%;
+  }
+  .approach > figure > .deployImg,
+  .deployImg {
+    position: absolute;
+    width: 14%;
+    height: 8%;
+  }
+
+  .approach .wrapper p,   .approach .wrapper h3,  .approach .wrapper ul {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width : 580px) {
+  .zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  }
+@keyframes Ourapprach {
+  0% {
+    background: url(../../Assets/images/OurApproachbg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    linear-gradient:(black,black)
+    /* object-fit: contain; */
+  }
+  50% {
+    background: url(../../Assets/images/Frame\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  100% {
+    background: url(../../Assets/images/OurApproachbg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+}

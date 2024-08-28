@@ -1,0 +1,317 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-align: center;
+}
+
+.Cards {
+  width: 100%;
+  max-width: 380px; /* Adjust as needed */
+  height: 250px;
+  padding: 25px 40px 40px 40px;
+  border: 4px solid #334679;
+  background: linear-gradient(180deg, #1b275a 0%, #0e1434 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+/* example */
+.Cards {
+  width: 100%;
+  max-width: 430px;
+  height: 250px;
+  padding: 25px 20px 20px 20px;
+  border: 4px solid #334679;
+  background: linear-gradient(180deg, #1b275a 0%, #0e1434 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.Cards h3 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  padding-bottom: 0px;
+  color: #06a9ca;
+}
+
+.Cards h5 {
+  width: 70%;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0.36px;
+  text-align: left;
+  padding-bottom: 10px;
+  color: #c4cbf5;
+}
+
+/* example */
+.Cards p {
+  width: 100%;
+  max-width: 420px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 0px;
+  /* padding-left: 5px; */
+  color: #f2f5f7;
+}
+
+.Cards img {
+  width: 50px;
+  border-radius: 500px;
+  position: absolute;
+  left: 80%;
+  bottom: 75%;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1700px) {
+  .Cards {
+    /* max-width: 300px; */
+    width: 80%;
+    /* height: 140px; */
+  }
+  .Cards p {
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 0px;
+    color: #f2f5f7;
+  }
+}
+@media screen and (max-width: 1502px) {
+  .Cards {
+    /* max-width: 100%; */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* .Cards {
+    max-width: 440px;
+    width: 280px;
+  } */
+  .Cards h5 {
+    font-size: 13px;
+  }
+  .Cards p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .Cards {
+    /* max-width: 100%; */
+    width: 80%;
+  }
+  .Cards h3 {
+    font-size: 16px;
+  }
+  .Cards h5 {
+    width: 90%;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  .Cards p {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .Cards {
+    width: 200px;
+    height: 220px;
+  }
+  .Cards h5 {
+    width: 80%;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  .Cards p {
+    width: 100%;
+    height: 100px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  /* .Cards {
+    width: 300px;
+    height: 150px;
+  } */
+}
+
+@media screen and (max-width: 1250px) {
+  .Cards {
+    width: 80%;
+    padding: 17px 20px 20px 20px;
+    height: 235px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  /* .Cards {
+    width: 250px;
+    height: 130px;
+  } */
+
+  .Cards p {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+
+  .Cards img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  /* .Cards {
+    width: 320px;
+    height: 120px;
+  } */
+
+  .Cards img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Cards {
+    width: 80%;
+    /* height: 130px; */
+  }
+  .Cards h3 {
+    font-size: 18px;
+  }
+  .Cards p {
+    width: 100%;
+    height: 100px;
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 0px;
+  }
+
+  .Cards img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Cards {
+    width: 80%;
+    height: 200px;
+  }
+  .Cards h3 {
+    font-size: 18px;
+  }
+  .Cards p {
+    width: 100%;
+    height: 100px;
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 0px;
+  }
+
+  .Cards img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Cards {
+    width: 80%;
+    /* height: 130px; */
+    padding: 20px 20px 20px 20px;
+  }
+  .Cards img {
+    width: 49px;
+    height: 49px;
+  }
+  .Cards h3 {
+    width: 172px;
+    height: 32px;
+    font-size: 19px;
+  }
+  .Cards h5 {
+    font-size: 12px;
+    width: 95%;
+    /* height: 18px; */
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .Cards p {
+    width: 100%;
+    /* height: 84px; */
+    padding-left: 0px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Cards {
+    height: 210px;
+  }
+  .Cards img {
+    width: 40px;
+    height: 40px;
+  }
+  .Cards h3 {
+    /* width: 172px; */
+    height: 32px;
+    font-size: 19px;
+  }
+  .Cards h5 {
+    font-size: 10px;
+    line-height: 10px;
+    width: 80%;
+    font-weight: 600;
+  }
+  .Cards p {
+    /* width: 190px; */
+    /* height: 84px; */
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Cards h5 {
+    font-size: 9px;
+    /* width: 125px; */
+    /* height: 18px; */
+    font-weight: 500;
+    line-height: 10px;
+    width: 80%;
+  }
+  .Cards p {
+    width: 100%;
+    /* height: 84px; */
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}

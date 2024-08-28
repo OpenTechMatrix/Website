@@ -1,0 +1,191 @@
+.CSHeader {
+    width: 100%;
+    padding: 0px 0;
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 13, 39);;
+}
+.CSHeader .navLinks {
+    flex-basis: 50%;
+}
+.CSHeader>.wrapper>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CSHeader .getconsultation {
+    width: 250px;
+    height: 60px;
+    position: relative;
+}
+.CSHeader .getconsultation figure {
+    width: 30px;
+    padding-right: 10px;
+}
+.CSHeader .getconsultation a {
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06A9CA;
+    color: #FFFFFF;
+    border-radius: 52px;
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+    z-index: 99;
+    top: 5px;
+    left: 1px;
+    text-transform: uppercase;
+}
+.CSHeader .getconsultation a:hover + .test {
+    background: rgb(54, 183, 255);
+    background: linear-gradient(
+      var(--gradient-angle),
+      #36B7FF,
+      #9EDCFF,
+      #4BA9FF,
+      #164661
+    );
+    transition: 0.3s;
+   opacity: 1;
+   filter: blur(5px);
+}
+.CSHeader .getconsultation a:active {
+    background-color: #0094B1;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 2px 16px 0px;
+}
+.CSHeader .getconsultation a:active + .test {
+    border-radius: 100px;
+    background: rgba(6, 169, 202, 0.5);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 2px 16px 0px;
+}
+@media only screen and (max-width: 1900px) {
+    .CSHeader .getconsultation a {
+        height: 78%;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .CSHeader .getconsultation {
+        width: 200px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .CSHeader .getconsultation {
+        display: none;
+    }
+    .CSHeader .navLinks ul li.active {
+        color: #00B3CC;
+    }
+    .CSHeader .menuIcon {
+        padding: 1%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: #080D27;
+        border-radius: 3px;
+    }
+    .CSHeader .bar_1,
+    .CSHeader .bar_2,
+    .CSHeader .bar_3 {
+        width: 30px;
+        height: 1px;
+        background-color: #00B3CC;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+    .CSHeader .bar_1,
+    .CSHeader .bar_2,
+    .CSHeader .bar_3 {
+        transition: transform 0.4s, opacity 0.4s; /* Add opacity transition */
+    }
+    .CSHeader .bar_1.open {
+        transform: rotate(326deg) translate(-4px, 7px);
+    }
+    .CSHeader .bar_2.open {
+        opacity: 0;
+        transform: translateX(-60px); /* Move bar_2 to the left */
+    }
+    .CSHeader .bar_3.open {
+        transform: rotate(32deg) translate(-5px, -9px);
+    }
+    /* navLinks */
+    .CSHeader .navLinks.open .bar1,
+    .CSHeader .navLinks.open .bar2,
+    .CSHeader .navLinks.open .bar3 {
+      background-color: #333; /* Change to desired color */
+    }
+    .CSHeader .navLinks.open .bar1.open,
+    .CSHeader .navLinks.open .bar2.open,
+    .CSHeader .navLinks.open .bar3.open {
+      background-color: transparent; /* Change to desired color */
+    }
+    .CSHeader .navLinks {
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Change width to cover the entire viewport */
+        background-image: linear-gradient(to right, #080F31 , #081B5A);
+        z-index: -1;
+        transform: translateY(-256%);
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+    .CSHeader .navLinks.open {
+        transform: translateY(0);
+    }
+    .CSHeader .navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    .CSHeader .navLinks a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s;
+    }
+    .CSHeader ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .CSHeader ul li a {
+        padding: 5% 0;
+    }
+    .CSHeader nav ul li:nth-child(1),
+    .CSHeader nav ul li:nth-child(2)  {
+        height: 1px;
+        /* margin: 50px 0; */
+        /* background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        border: 0; */
+    }
+    .CSHeader ul li:nth-child(1)::after,
+    .CSHeader nav ul li:nth-child(2)::after  {
+        display: block;
+        content: '';
+        height: 1px;
+        background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #CCCCCC), color-stop(100%, rgba(255, 255, 255, 0)));
+        background-image: -webkit-radial-gradient(center top, farthest-side, #CCCCCC 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: -moz-radial-gradient(center top, farthest-side, #CCCCCC 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-radial-gradient(center top, farthest-side, #CCCCCC 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: radial-gradient(farthest-side at center top, #CCCCCC 0%, rgba(255, 255, 255, 0) 100%);
+    }
+}

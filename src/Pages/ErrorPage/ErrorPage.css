@@ -1,0 +1,71 @@
+.errorPage {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: bgOurOffices 8s infinite forwards;
+}
+
+.errorPage h1 {
+  font-size: 80px;
+  color: white;
+}
+
+.errorPage p {
+  font-size: 40px;
+  color: white;
+}
+
+@keyframes bgOurOffices {
+  0% {
+    background: url(../../Assets/images/OurOfficeBG.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    linear-gradient: (black, black);
+    /* object-fit: contain; */
+  }
+  25% {
+    background: url(../../Assets/images/WWA_CS-BG2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  50% {
+    background: url(../../Assets/images/WWA_CS-BG3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  75% {
+    background: url(../../Assets/images/WWA_CS-BG2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  100% {
+    background: url(../../Assets/images/OurOfficeBG.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    linear-gradient: (black, black);
+    /* object-fit: contain; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .errorPage h1 {
+    font-size: 45px;
+    color: white;
+  }
+
+  .errorPage p {
+    font-size: 30px;
+    color: white;
+  }
+}

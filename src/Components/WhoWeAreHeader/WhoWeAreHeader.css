@@ -1,0 +1,247 @@
+.WWAHeader {
+  width: 100%;
+  padding: 26px 0;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WWAHeader>.wrapper>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WWAHeader .navLinks ul li.active {
+  color: #00b3cc;
+}
+
+.WWAHeader .menuIcon {
+  padding: 1%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #06a9ca;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.WWAHeader .bar_1,
+.WWAHeader .bar_2,
+.WWAHeader .bar_3 {
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.WWAHeader .bar_1,
+.WWAHeader .bar_2,
+.WWAHeader .bar_3 {
+  transition: transform 0.4s, opacity 0.4s; /* Add opacity transition */
+}
+
+.WWAHeader .bar_1.open {
+  transform: rotate(326deg) translate(-4px, 7px);
+}
+
+.WWAHeader .bar_2.open {
+  opacity: 0;
+  transform: translateX(-60px); /* Move bar_2 to the left */
+}
+
+.WWAHeader .bar_3.open {
+  transform: rotate(32deg) translate(-5px, -9px);
+}
+
+/* navLinks */
+.WWAHeader .navLinks.open .bar1,
+.WWAHeader .navLinks.open .bar2,
+.WWAHeader .navLinks.open .bar3 {
+background-color: #333; /* Change to desired color */
+}
+
+.WWAHeader .navLinks.open .bar1.open,
+.WWAHeader .navLinks.open .bar2.open,
+.WWAHeader .navLinks.open .bar3.open {
+background-color: transparent; /* Change to desired color */
+}
+
+.WWAHeader .navLinks {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 100vw; /* Change width to cover the entire viewport */
+  z-index: 0;
+  transform: translateX(-256%);
+  text-align: center;
+}
+
+.WWAHeader .navLinks.open {
+  transform: translateY(0);
+}
+
+.WWAHeader .navLinks ul{
+  display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.WWAHeader .navLinks ul .open {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.WWAHeader .navLinks a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.WWAHeader ul li {
+  width: 90%;
+  text-align: center;
+   
+}
+
+
+@media only screen and (max-width:1024px) {
+
+  .WWAHeader .navLinks ul li.active {
+      color: #00b3cc;
+  }
+
+  .WWAHeader .menuIcon {
+      padding: 1%;
+      display: block;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      background-color: #06a9ca;
+      border-radius: 3px;
+  }
+
+  .WWAHeader .bar_1,
+  .WWAHeader .bar_2,
+  .WWAHeader .bar_3 {
+      width: 30px;
+      height: 1px;
+      background-color: #000;
+      margin: 4px 0;
+      transition: 0.4s;
+  }
+
+  .WWAHeader .bar_1,
+  .WWAHeader .bar_2,
+  .WWAHeader .bar_3 {
+      transition: transform 0.4s, opacity 0.4s; /* Add opacity transition */
+  }
+
+  .WWAHeader .bar_1.open {
+      transform: rotate(326deg) translate(-4px, 7px);
+  }
+
+  .WWAHeader .bar_2.open {
+      opacity: 0;
+      transform: translateX(-60px); /* Move bar_2 to the left */
+  }
+
+  .WWAHeader .bar_3.open {
+      transform: rotate(32deg) translate(-5px, -9px);
+  }
+
+  /* navLinks */
+  .WWAHeader .navLinks.open .bar1,
+  .WWAHeader .navLinks.open .bar2,
+  .WWAHeader .navLinks.open .bar3 {
+    background-color: #333; /* Change to desired color */
+  }
+
+  .WWAHeader .navLinks.open .bar1.open,
+  .WWAHeader .navLinks.open .bar2.open,
+  .WWAHeader .navLinks.open .bar3.open {
+    background-color: transparent; /* Change to desired color */
+  }
+
+  .WWAHeader .navLinks {
+      margin-top: 75px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw; /* Change width to cover the entire viewport */
+      background-image: linear-gradient(to right, #080f31 , #081b5a);
+      z-index: -1;
+      transform: translateY(-256%);
+      transition: transform 0.5s ease-in-out;
+      text-align: center;
+  }
+  
+  .WWAHeader .navLinks.open {
+      transform: translateY(0);
+  }
+
+  .WWAHeader .navLinks ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+  .WWAHeader .navLinks a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s;
+  }
+
+  .WWAHeader ul li {
+      width: 100%;
+      text-align: center;
+       
+  }
+
+  .WWAHeader ul li a {
+      padding: 5% 0;
+  }
+  
+  .WWAHeader nav ul li:nth-child(1),  
+  .WWAHeader nav ul li:nth-child(2)  {
+      height: 1px;
+      /* margin: 50px 0; */
+      /* background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+      background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+      border: 0; */
+  }
+  .WWAHeader ul li:nth-child(1)::after,
+  .WWAHeader nav ul li:nth-child(2)::after  {
+      display: block;
+      content: '';
+      height: 1px;
+      background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+      background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+      background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+      background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+      background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}

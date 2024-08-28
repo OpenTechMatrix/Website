@@ -1,0 +1,312 @@
+.WWDContainer::-webkit-scrollbar,
+.WWDContainer .scroll-area::-webkit-scrollbar,
+.WWDContainer .scroll-container::-webkit-scrollbar  {
+    display: none;
+}
+
+.WWDContainer {
+    height: 100vh;
+    background-color: rgb(12, 24, 56);
+    background-image: url("../../Assets/images/WhatWeDoBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.WWDContainer .headerContainer {
+    width: 100%;
+    position: absolute;
+}
+.TextScrollAnimation {
+    animation: TextScrollAnimate 1s alternate forwards;
+}
+
+.WWDFooter {
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.WWDContainer .scroll-container {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.WWDContainer .scroll-area {
+    scroll-snap-align: start;
+    height: 100vh;
+    scroll-behavior: smooth; /* Apply smooth scrolling to individual areas if desired */
+    box-sizing: border-box;
+}
+
+.WWDContainer .boxShadow> img {
+    padding-top: 10%;
+}
+
+/* Content Styling Start from here */
+
+.WWDDataContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WWDDataContent .WWDDataSection {
+    margin-left: 2.5%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+    position: relative;
+    flex-basis: 44%;
+    transform: translateY(100%);
+}
+
+.WWDDataContent .WWDDataSection .boxShadow  {
+    width: 50%;
+}
+
+.WWDDataContent .WWDDataSection .WWDDataSectionRight {
+    flex-basis: 56%;
+}
+
+.WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+    margin: 8% 0% 2%;
+    color: #06A9CA;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3>span {
+    margin-right: 2%;
+}
+
+.WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+    display: block;
+    color: #F0F8FF;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.WWDDataContent .getconsultationIcon {
+    display: none;
+}
+
+/* Content Styling End from here */
+
+@keyframes TextScrollAnimate {
+    0% {
+        transform: translateY(100%);
+    }
+    80% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media only screen and (max-width: 3500px) {    
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+        flex-basis: 40%;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionRight {
+        flex-basis: 60%;
+    }
+}
+@media only screen and (max-width: 2100px) {
+    .WWDDataContent .WWDDataSection {
+        align-items: center;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+        flex-basis: 50%;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionRight {
+        flex-basis: 40%;
+    }
+}
+@media only screen and (max-width: 1900px) {
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        font-size: 42px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 22px;
+        line-height: 47px;
+    }
+}
+@media only screen and (max-width: 1760px) {    
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        line-height: 43px;
+    }
+}
+
+@media only screen and (max-width: 1480px) {    
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 1330px) { 
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        font-size: 38px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {    
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (max-width: 1090px) {   
+    .What-we-do-banner h2 {
+        font-size: 50px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        font-size: 34px;
+    } 
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .What-we-do-banner h2 {
+        top: 60%;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .WWDDataContent {
+        padding-top: 0;
+    }
+    .What-we-do-banner .bannerImage {
+        height: 80vh;
+    }
+    .What-we-do-banner h2 {
+        font-size: 35px;
+    }
+    .WWDDataContent .WWDDataSection {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .WWDDataSection .WWDDataSectionRight figure {
+        width: 350px;
+        height: 300px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+        width: 300px;
+    }
+
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        margin-bottom: 1%;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 12px;
+        line-height: unset;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    .WWDDataContent .getconsultationIcon {
+        display: block;
+        position: absolute;
+        right: 10%;
+        bottom: -3%;
+    }
+    .WWDDataContent .getconsultationIcon a>img {
+        width: 50px;
+    }
+}
+
+
+@media only screen and (max-width:610px) {
+    .What-we-do-banner h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .What-we-do-banner .getconsultation a {
+        width: 180px;
+        font-size: 14px;
+    }
+    .What-we-do-banner .getconsultation figure {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .What-we-do-banner h2 {
+        font-size: 26px;
+    }
+    .WWDDataSection .WWDDataSectionRight figure {
+        width: 300px;
+        height: 250px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+        width: 260px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 10px;
+    }
+    .WWDDataContent .getconsultationIcon a>img {
+        width: 40px;
+    }
+    .What-we-do-banner .bannerImage {
+        height: 70vh;
+    }
+}
+@media only screen and (max-width:350px) {
+    .WWDDataSection .WWDDataSectionRight figure {
+        width: 280px;
+        height: 200px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft {
+        width: 240px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>p>span {
+        font-size: 9.5px;
+    }
+    .What-we-do-banner .getconsultation {
+        height: 30vh;
+    }
+    .What-we-do-banner .getconsultation a {
+        height: 20%;
+    }
+}
+
+@media only screen and (max-width:315px) {
+    .What-we-do-banner h2 {
+        font-size: 22px;
+    }
+    .WWDDataContent .WWDDataSection .WWDDataSectionLeft>h3 {
+        margin-top: 80px;
+    }
+}

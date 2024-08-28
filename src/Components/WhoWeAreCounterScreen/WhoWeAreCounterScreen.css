@@ -1,0 +1,260 @@
+.WhoWeAreBanner {
+  scroll-snap-align: start;
+  overflow: hidden;
+  position: relative;
+  background-color: #0c1838;
+  font-family: "Poppins", sans-serif;
+}
+
+.counter-screen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.counter-screen .WWAwrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: slideUp 1s forwards, WWA_CSbackgroundImg 10s infinite forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes WWA_CSbackgroundImg {
+  0% {
+    background: url(../../Assets/images/WWA_CS-BG1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #0c1838;
+    /* object-fit: contain; */
+  }
+  25% {
+    background: url(../../Assets/images/WWA_CS-BG2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  50% {
+    background: url(../../Assets/images/WWA_CS-BG3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  75% {
+    background: url(../../Assets/images/WWA_CS-BG2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  100% {
+    background: url(../../Assets/images/WWA_CS-BG1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    /* object-fit: contain; */
+  }
+}
+
+.counter_logo {
+  width: 146px;
+  height: 146px;
+}
+
+.WWAwrapper .total {
+  flex-basis: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WWAwrapper .total:nth-child(1) {
+  animation: bounce1 1.8s ease forwards;
+}
+
+.WWAwrapper .total:nth-child(2) {
+  animation: bounce2 1.8s ease forwards;
+}
+
+.WWAwrapper .total:nth-child(3) {
+  animation: bounce3 1.8s ease forwards;
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes bounce3 {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-100px);
+  }
+}
+
+.counter {
+  font-size: 210px;
+  color: white;
+}
+
+.WWAwrapper p {
+  font-size: 46px;
+  color: #06a9ca;
+  font-family: Poppins;
+}
+
+@media screen and (max-width: 1600px) {
+  .counter_logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .WWAwrapper p {
+    font-size: 30px;
+  }
+
+  .counter {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .counter_logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .WWAwrapper p {
+    font-size: 30px;
+  }
+
+  .counter {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .counter_logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .WWAwrapper p {
+    font-size: 20px;
+  }
+
+  .counter {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .counter_logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .WWAwrapper p {
+    font-size: 15px;
+  }
+
+  .counter {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .counter-screen .WWAwrapper {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+  }
+
+  
+.WWAwrapper .total {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0%;
+}
+
+  .counter_logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .WWAwrapper p {
+    font-size: 18px;
+  }
+
+  .counter {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+
+.WhoWeAreBanner .counter-screen .WWAwrapper{
+  justify-content: space-evenly;
+}
+
+.WhoWeAreBanner .counter-screen .WWAwrapper .total:nth-child(2){
+
+  margin: 6% 0;
+}
+
+.counter {
+  font-size: 70px;
+}
+
+}
+
+@media screen and (max-width: 425px){
+
+  .counter {
+    font-size: 65px;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+
+  .counter {
+    font-size: 45px;
+  }
+
+}
+
+

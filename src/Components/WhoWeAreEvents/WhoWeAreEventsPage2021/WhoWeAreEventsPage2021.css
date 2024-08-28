@@ -1,0 +1,62 @@
+.WhoWeAreEventsPageBlock figure {
+  height: 416px;
+  width: 839px;
+}
+
+.WhoWeAreEventsPageBlock h2 {
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #c4cbf5;
+}
+
+.WhoWeAreEventsPageBlock p {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f0f8ff;
+  max-width: 790px;
+}
+
+.WhoWeAreEvents2019-2020PageBlock {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 30px;
+  /* padding-top: 5%; */
+}
+
+.WhoWeAreEventsPageBlock .WhoWeAreEventsPage2021Img {
+  aspect-ratio: 3/1.5;
+  object-fit: cover;
+}
+
+.WhoWeAreEventsPageBlock .WhoWeAreEventsPage2022Img {
+  aspect-ratio: 3/1.5;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1810px) {
+  .WhoWeAreEvents2023-2024PageBlock {
+    width: 90vw;
+  }
+
+  .WhoWeAreEventsPageBlock figure {
+    width: 45vw !important;
+    height: 60% !important;
+  }
+  .WhoWeAreEventsPageBlock h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 51px;
+  }
+  .WhoWeAreEventsPageBlock p {
+    font-size: 20px;
+    line-height: 37px;
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "url": {
+        "production":  "https://cobalt-blue-brown-bear-sock.cyclic.app/",
+        "development":  "https://cobalt-blue-brown-bear-sock.cyclic.app/"
+    },
+    "api": {
+        "SEND_EMAIL_MESSAGE": "api/emailService/send"
+    }}

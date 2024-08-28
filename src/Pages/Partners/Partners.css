@@ -1,0 +1,35 @@
+.partner-studies-page {
+    padding: 30px 0 70px;
+    background-color: #f2f2f2;
+}
+.partner-studies-links .wrapper>a {
+    text-transform: capitalize;
+}
+.partner-studies-links .wrapper>a:nth-of-type(1) {
+    color: #00b3cf;
+}
+.partner-studies-links .wrapper>a:nth-of-type(2) {
+    margin-left: 20px;
+    color: #000000;
+    text-decoration: underline;
+}
+.partner-studies .wrapper>h2 {
+    font-size: 52px;
+    font-family: 'BuildTitling-Regular';
+    text-transform: upperpartner;
+    text-align: center;
+}
+.three-column.partner-studies-columns> span {
+    background-color: #CFCFCF;
+}
+
+.partner-studies .partner-card-sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 665px) {
+    .partner-studies .wrapper>h2 {
+        font-size: 45px;
+    }
+}

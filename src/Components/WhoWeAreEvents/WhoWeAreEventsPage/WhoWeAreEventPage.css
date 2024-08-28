@@ -1,0 +1,263 @@
+.WhoWeAreEvents2021-2022PageBlock,
+.WhoWeAreEvents2019-2020PageBlock,
+.WhoWeAreEvents2023-2024PageBlock {
+  transform: translateY(0);
+}
+.WhoWeAreEventPage {
+  background: #121d5e fixed;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -webkit-animation: backgroundImg 3s infinite forwards;
+  animation: backgroundImg 3s infinite forwards;
+}
+
+.WhoWeAreEventPage h1 {
+  font-family: Poppins;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 81px;
+  color: #06a9ca;
+  z-index: 1;
+  padding-bottom: 45%;
+  animation: fade-in 3s;
+}
+
+.WhoWeAreEventPage::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes modalSwipeIn {
+  0% {
+    transform: translateY(100%);
+  }
+  65% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalBloomSwipeX {
+  0% {
+    transform: translateY(100%) translateX(100%);
+  }
+  50% {
+    transform: translateY(3%) translateX(3%);
+  }
+  65% {
+    transform: translateY(5%) translateX(5%);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes modalSwipeOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes backgroundImg {
+  0% {
+    background: url(../../../Assets/images/WhoWeAreEventsAnimationBg1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    linear-gradient: (black, black);
+    /* object-fit: contain; */
+  }
+  50% {
+    background: url(../../../Assets/images/WhoWeAreEventsAnimationBg2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+  100% {
+    background: url(../../../Assets/images/WhoWeAreEventsAnimationBg1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* object-fit: contain; */
+  }
+}
+
+.WhoWeAreEventsPageBlock {
+  padding-top: 3%;
+  /* justify-content: flex-start; */
+}
+
+.scroll-container {
+  animation: modalSwipeIn 1.5s forwards;
+  position: absolute;
+  z-index: 0;
+  /* padding-top: 2%; */
+}
+
+.TextScrollAnimation1 {
+  animation: TextScrollAnimate1 1s alternate forwards;
+}
+
+.WhoWeAreEventPage .WhoWeAreEvents2019-2020PageBlock {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 1810px) {
+  .WhoWeAreEvents2021-2022PageBlock {
+    justify-content: center;
+  }
+
+  .WhoWeAreEventsPageBlock {
+    width: 45vw;
+  }
+
+  .WhoWeAreEventsPageBlock figure {
+    width: 45vw !important;
+    height: 100%;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 51px;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 20px;
+    line-height: 37px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .WhoWeAreEvents2021-2022PageBlock {
+    justify-content: center;
+  }
+
+  .WhoWeAreEventsPageBlock {
+    width: 45vw;
+  }
+
+  .WhoWeAreEventsPageBlock figure {
+    width: 45vw !important;
+    height: 100%;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .WhoWeAreEventPage {
+    position: relative;
+  }
+
+  .WhoWeAreEventPage h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+  }
+
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer h2 {
+    font-size: 20px;
+    font-weight: 580;
+    line-height: 45px;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .WhoWeAreEventPage .scroll-container .scroll-area {
+    padding-bottom: 8%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .WhoWeAreEventPage h1 {
+    font-size: 40px;
+  }
+
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer h2 {
+    font-size: 18px;
+    font-weight: 580;
+    line-height: 40px;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .WhoWeAreEventPage h1 {
+    font-size: 40px;
+  }
+
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer h2 {
+    font-size: 18px;
+    font-weight: 580;
+    line-height: 40px;
+  }
+  .WhoWeAreEventsPageBlock .WhoWeArePageBlockContainer p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .WhoWeAreEventsPageBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .WhoWeAreEventsPageBlockctn {
+    width: 100%;
+  }
+
+  .WhoWeAreEventPage h1 {
+    font-size: 40px;
+    top: 10%;
+  }
+
+  .WhoWeAreEventPage .scroll-container .scroll-area {
+    scroll-snap-align: start;
+    height: 50vh;
+    scroll-behavior: smooth;
+  }
+
+  .WhoWeAreEventPage .scroll-container {
+    scroll-snap-type: y mandatory;
+    height: 75vh !important;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}

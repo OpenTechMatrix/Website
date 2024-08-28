@@ -1,0 +1,57 @@
+@keyframes modalSwipeIn {
+  0% {
+    transform: translateY(100%);
+  }
+  65% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .WhoWeAreEventPage {
+    height: 100vh;
+  }
+
+  .WhoWeAreEventsPageBlockctn {
+    width: 100%;
+  }
+  .WhoWeAreEventPage h1 {
+    font-size: 40px;
+  }
+  .WhoWeAreEventsPageBlockctn {
+    width: 100%;
+  }
+
+  .WhoWeAreEventsPageBlock {
+    width: 100%;
+  }
+
+  .WhoWeAreEventPage .scroll-area {
+    scroll-snap-align: start;
+    height: 55vh;
+    scroll-behavior: smooth;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+
+  .WhoWeAreEventPage .scroll-area:last-child {
+    padding-bottom: 45%;
+  }
+
+  .WhoWeAreEventPage .scroll-container {
+    scroll-snap-type: y proximity;
+    height: 90vh;
+    width: 80%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    animation: modalSwipeIn 1.5s forwards;
+    margin-top: 10%;
+  }
+
+  .TextScrollAnimation1 {
+    animation: TextScrollAnimate1 1s alternate forwards;
+  }
+}

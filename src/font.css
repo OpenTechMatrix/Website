@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'BuildTitling-Regular';
+    src: url('./Fonts/built\ titling\ rg.otf') format('truetype'); /* Regular */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BuildTitling-Bold';
+    src: url('./Fonts/built\ titling\ bd.otf') format('truetype'); /* Bold */
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BuildTitling-Regular-It';
+    src: url('./Fonts/built\ titling\ rg\ it.otf') format('truetype'); /* Italic */
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BuildTitling-Bold-It';
+    src: url('./Fonts/built\ titling\ bd\ it.otf') format('truetype'); /* Bold Italic */
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BuildTitling-lt';
+    src: url('./Fonts/built\ titling\ lt.otf') format('truetype'); /* Bold Italic */
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'BuildTitling-sb';
+    src: url('./Fonts/built\ titling\ sb.otf') format('truetype'); /* Bold Italic */
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'BuildTitling-el';
+    src: url('./Fonts/built\ titling\ el.otf') format('truetype'); /* Bold Italic */
+    font-weight: bold;
+    font-style: italic;
+  }

@@ -1,0 +1,342 @@
+.our_office {
+    padding: 69px 0;
+    animation: bgOurOffices 8s infinite forwards;
+}
+.our_office .wrapper {
+    width: 88.2%;
+}
+.our_office .wrapper>div {
+    padding: 4% 3.5%;
+    /* border: 1px solid #3a519d; */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: url("../../Assets/images/Our\ Offices_2.png") no-repeat center center/100% 100%;
+    /* box-shadow: inset 0px 0px 1px 1px #080D27, inset 0px 210px 681px -75px #080D27; */
+}
+
+.our_office .wrapper>div>h3 {
+    color: #06A9CA;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* padding-left: 1%; */
+}
+
+.our_office .office_location {
+    padding: 3%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    color: #f2f5f7;
+}
+
+.our_office .office_location>ul {
+    margin-left: 3%;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    color: #C4CBF5;
+}
+.our_office .office_location>ul:not(:last-child) {
+    margin-right: 4%;
+}
+.our_office .office_location>ul>li h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.our_office .office_location>ul>li:nth-of-type(2) {
+    position: relative;
+}
+.our_office .office_location>ul>li:nth-of-type(2) span {
+    width: 22px;
+    height: 22px;
+    padding: 5px 5px 5px 4px;
+    border: .8px solid #022b31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6%;
+    left: -10%;
+    background:#011338;
+    border-radius: 10px;
+    transform: rotate(-45deg);
+}
+.our_office .office_location>ul>li:nth-of-type(2) span img {
+    transform: rotate(45deg);
+}
+ .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+    margin: 10px 0 12px;
+}
+.our_office .office_location>ul>li img {
+    width: 95%;
+}
+
+ 
+.our_office .office_location ul:last-child li:nth-of-type(2) h6 {
+    margin-bottom: 38px;
+}
+
+@media only screen and (max-width:3500px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width:2200px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:2000px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1850px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:1700px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:1550px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1375px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1275px) {
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 18px;
+        height: 18px;
+        padding: 5px;
+        left: -12%;
+        transform: rotate(-45deg);
+    }
+    .our_office .office_location>ul>li h3 {
+        font-size: 22px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 12.5px;
+    }
+    .our_office .office_location ul:last-child li:nth-of-type(2) h6 {
+        margin-bottom: 30px;
+        }
+}
+@media only screen and (max-width:1150px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 11.5px;
+    }
+}
+@media only screen and (max-width:1060px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .our_office .office_location>ul>li h3 {
+        font-size: 20px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 10.5px;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .our_office .office_location {
+        padding: 7% 3% 3%;
+        flex-direction: column;
+    }
+    .our_office .wrapper>div {
+        background: url("../../Assets/images/WorldMap.png") no-repeat center center/100%;
+    }
+    .our_office .office_location>ul:not(:last-child) {
+        margin-right: 0;
+        margin-bottom:50px;
+    }
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 15px;
+        height: 15px;
+        padding: 7px;
+        border-radius: 50%;
+        top: 8%;
+        left: -6%;
+        transform: rotate(0deg);
+    }
+    .our_office .office_location>ul>li:nth-of-type(2) span img {
+        transform: rotate(0deg);
+    }
+    .our_office .office_location>ul>li h3 {
+        font-size: 25px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        margin: 15px 0 30px;
+        font-size: 21px;
+    }
+
+}
+
+@media only screen and (max-width:888px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width:802px) {
+    .our_office .wrapper>div>h3 {
+        font-size: 35px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .our_office {
+        padding: 80px 0;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        margin: 5px 0 20px;
+        font-size: 15px;
+    }
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 10px;
+        height: 10px;
+        padding: 7px;
+        border-radius: 50%;
+        top: 2.5%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        top: 2%;
+    } 
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        padding: 7px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 13.5px;
+    }
+}
+@media only screen and (max-width: 590px) {
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 12.5px;
+    }
+
+    .our_office .office_location ul:last-child li:nth-of-type(2) h6 {
+        margin-bottom: 20px;
+    }
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 10px;
+        height: 10px;
+        padding: 3px;
+        top: 5%;
+    } 
+}
+@media only screen and (max-width: 532px) {
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 5px;
+        height: 5px;
+        padding: 2px;
+        top: 6%;
+    } 
+    .our_office .wrapper>div>h3 {
+        font-size: 28px;
+    }
+    .our_office .office_location>ul>li h3 {
+        font-size: 20px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    .our_office {
+        padding: 50px 0;
+    }
+    .our_office .office_location>ul:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .our_office .wrapper>div>h3 {
+        font-size: 21px;
+    }
+    .our_office .office_location>ul>li h3 {
+        font-size: 14px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 9.5px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .our_office .office_location>ul>li:nth-of-type(2) span {
+        width: 5px;
+        height: 5px;
+        top: 5%;
+    } 
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 385px) {
+    .our_office .wrapper>div>h3 {
+        font-size: 18px;
+    }
+    .our_office .office_location>ul>li h3 {
+        font-size: 12px;
+    }
+     .our_office .office_location>ul>li p, .our_office .office_location>ul>li h6{
+        font-size: 8.5px;
+    }
+}
+
+@keyframes bgOurOffices {
+    0% {
+      background: url(../../Assets/images/OurOfficeBG.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      linear-gradient:(black,black);
+      /* object-fit: contain; */
+    }
+    25% {
+      background: url(../../Assets/images/WWA_CS-BG2.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      /* object-fit: contain; */
+    }
+    50% {
+      background: url(../../Assets/images/WWA_CS-BG3.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      /* object-fit: contain; */
+    }
+    75% {
+        background: url(../../Assets/images/WWA_CS-BG2.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        /* object-fit: contain; */
+      }
+      100% {
+        background: url(../../Assets/images/OurOfficeBG.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        linear-gradient:(black,black);
+        /* object-fit: contain; */
+      }
+  }
+
+ 
